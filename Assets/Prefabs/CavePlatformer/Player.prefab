@@ -131,6 +131,8 @@ GameObject:
   - component: {fileID: 5564746796056154358}
   - component: {fileID: 3613895582600187363}
   - component: {fileID: 1853878410313070176}
+  - component: {fileID: 8441956893089686161}
+  - component: {fileID: 2704144010526209991}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -238,3 +240,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 140e632ac11db42519c65f0088912515, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8441956893089686161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386698514500486556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8028410a9dee4433be9295c86265d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Coins: 0
+--- !u!114 &2704144010526209991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7386698514500486556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d4c816d420e4cd5b003546c0203f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overworld: 0

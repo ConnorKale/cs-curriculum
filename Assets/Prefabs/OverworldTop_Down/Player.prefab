@@ -132,6 +132,9 @@ GameObject:
   - component: {fileID: 412193027009803671}
   - component: {fileID: 412193027009803665}
   - component: {fileID: 412193027009803664}
+  - component: {fileID: 2811017659375107514}
+  - component: {fileID: 7124824124649464515}
+  - component: {fileID: -6153122075330643183}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -227,3 +230,41 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.58, y: 0.94}
   m_EdgeRadius: 0
+--- !u!114 &2811017659375107514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412193027009803667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d4c816d420e4cd5b003546c0203f9d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  overworld: 0
+--- !u!114 &7124824124649464515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412193027009803667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8028410a9dee4433be9295c86265d74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Coins: 0
+--- !u!114 &-6153122075330643183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412193027009803667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b6f3b12232014323a1ea34553e782f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
