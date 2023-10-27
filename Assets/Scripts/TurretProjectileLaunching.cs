@@ -13,7 +13,7 @@ public class TurretProjectileLaunching : MonoBehaviour
     private float timer;
     private float originalTimer;
     private bool timerCounting;
-    SerializeField private GameObject projectile;
+    public GameObject projectile;
     void Start()
     {
         originalTimer = 2;
@@ -25,7 +25,7 @@ public class TurretProjectileLaunching : MonoBehaviour
     {
         if (target != null && timerCounting == false)
         {
-            Instantiate(projectile, transform.position, quartenion.identity);
+            Instantiate(projectile, transform.position, transform.rotation);
             timerCounting = true;
         }
         

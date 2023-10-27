@@ -27,3 +27,15 @@
 /// Player Blocking Attacks
 /// Knockback
 /// New Enemies
+/// Shop/Crafting (Bad)
+/// Inventory
+/// Crouch
+/// Multiplayer (Extremly difficult, do not attempt)
+/// RNG (Randomized) Drops
+/// Swaping Weapons
+/// Health potions
+/// Stats/Levels/Ability Scores for player
+
+/// Known Future Lessons
+/// Areas
+/// Boss Fight
