@@ -4,12 +4,12 @@ using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
-///  Need timer, child > detection collider, turret
+///  Attach an empty child called "radius" to newly created turrets, give it radius of 2.7
 
 public class TurretProjectileLaunching : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Vector2 target;
+    public GameObject target;
     private float timer;
     private float originalTimer;
     private bool timerCounting;
@@ -23,30 +23,22 @@ public class TurretProjectileLaunching : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target != null && timerCounting == false)
-        {
-            Instantiate(projectile, transform.position, transform.rotation);
-            timerCounting = true;
-        }
-        
-        
-        if (timer > 0 && timerCounting)
-        {
-            timer -= Time.deltaTime;
-        }
-        
+        timer -= Time.deltaTime;
         if (timer < 0)
         {
-            timer = originalTimer;
-            timerCounting = false;
+            if (target != null)
+            {
+                Instantiate(projectile, transform.position, transform.rotation);
+                timer = originalTimer;
+            }
         }
     }
     
-    void OnTriggerEnter2D(CircleCollider2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            target = other;
+            target = other.gameObject;
         }
     }
 }

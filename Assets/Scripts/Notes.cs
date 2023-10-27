@@ -7,12 +7,20 @@
 /// Changeable Things
 /// Starting and max health is 5, which can be changed in the HUD Script.
 /// Turret's seing range is changeble by clicking on the prefab and changing the "radius" of the Circle Collider 2D.
+     // It's currently set to 2.7, and it's diameter is roughly the width of the screen when using the splitscreen
+
+
 
 /// To-Do:
 /// Impliment Turrets
 /// Add Tiered Coins
 /// Make coins not respawn
 /// Ranged Attack For player
+/// Make Mobile Enemy move
+
+/// Orginize scripts folder?
+
+
 
 /// Done:
 /// Create movement script
@@ -22,6 +30,8 @@
 /// Make HUD the Game Manager that survives when scenes are loaded.
 /// Configure HUD
 /// /// Attach HUD to Canvas
+
+
 
 /// Possible Aditions:
 /// Player Blocking Attacks
@@ -36,6 +46,8 @@
 /// Health potions
 /// Stats/Levels/Ability Scores for player
 
-/// Known Future Lessons
+
+
+/// Known Future Lessons:
 /// Areas
 /// Boss Fight
