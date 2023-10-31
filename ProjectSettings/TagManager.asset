@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Axe
   - Spikes
+  - Coin_Worth1
+  - Coin_Worth10
+  - Coin_Worth1000
   layers:
   - Default
   - TransparentFX

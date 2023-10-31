@@ -42,6 +42,12 @@ public class HealthManager : MonoBehaviour
         {
             ChangeHealth(1);
         }
+        if (other.gameObject.CompareTag("Turret_Projectile"))
+        {
+            ChangeHealth(2);
+            other.gameObject.SetActive(false);
+        }
+
     }
 
     void ChangeHealth(int amount)

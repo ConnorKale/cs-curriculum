@@ -19,13 +19,16 @@ public class TurretProjectileMoving : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
+        
         if (timer < 0)
         {
             gameObject.SetActive(false);
-            if (target != null)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, target, 0.01f);
-            }
         }
+        
+        if (target != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target, 0.01f);
+        }
+
     }
 }
