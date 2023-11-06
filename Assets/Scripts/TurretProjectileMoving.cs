@@ -22,10 +22,16 @@ public class TurretProjectileMoving : MonoBehaviour
         if (timer < 0)
         {
             gameObject.SetActive(false);
-            if (target != null)
-            {
-                transform.position = Vector3.MoveTowards(transform.position, target, 0.01f);
-            }
+        }
+
+        if (target != null)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target, 0.01f);
+        }
+
+        if (transform.position == target)
+        {
+            gameObject.SetActive(false);
         }
     }
 }

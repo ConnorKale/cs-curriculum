@@ -1,4 +1,5 @@
 /// To switch from Visual Studio to Rider, go to Unity > Unity > Settings. CLICK REGENERATE PROJECT FILES.
+///         Debug.Log("String");     Puts messages in Unity's Console tab.
 
 
 /// General Notes:
@@ -13,7 +14,6 @@
 
 /// To-Do:
 /// Impliment Turrets
-/// Add Tiered Coins
 /// Make coins not respawn
 /// Ranged Attack For player
 /// Make Mobile Enemy move
@@ -30,6 +30,7 @@
 /// Make HUD the Game Manager that survives when scenes are loaded.
 /// Configure HUD
 /// /// Attach HUD to Canvas
+/// Add Tiered Coins
 
 
 

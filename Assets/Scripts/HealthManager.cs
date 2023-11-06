@@ -40,7 +40,13 @@ public class HealthManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Spikes"))
         {
+            ChangeHealth(2);
+        }
+
+        if (other.gameObject.CompareTag("Turret_Projectile"))
+        {
             ChangeHealth(1);
+            other.gameObject.SetActive(false);
         }
     }
 
