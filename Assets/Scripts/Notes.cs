@@ -13,9 +13,9 @@
 
 
 /// To-Do:
-/// Impliment Turrets
 /// Make coins not respawn
 /// Ranged Attack For player
+/// Set Player's projectile timer legnth with Wells computer. Costomize all four scripts.
 /// Make Mobile Enemy move
 
 /// Orginize scripts folder?
@@ -23,25 +23,27 @@
 
 
 /// Done:
-/// Create movement script
-/// Create CollectCoins
-/// Create HealthMaanager
-/// Create HUD
-/// Make HUD the Game Manager that survives when scenes are loaded.
-/// Configure HUD
-/// /// Attach HUD to Canvas
+/// Impliment Turrets
 /// Add Tiered Coins
+/// Attach HUD to Canvas
+/// Configure HUD
+/// Make HUD the Game Manager that survives when scenes are loaded.
+/// Create HUD
+/// Create HealthMaanager
+/// Create CollectCoins
+/// Create movement script
 
 
 
 /// Possible Aditions:
+/// Black Hole
 /// Player Blocking Attacks
 /// Knockback
 /// New Enemies
 /// Shop/Crafting (Bad)
 /// Inventory
 /// Crouch
-/// Multiplayer (Extremly difficult, do not attempt)
+/// Multiplayer (Do not attempt)
 /// RNG (Randomized) Drops
 /// Swaping Weapons
 /// Health potions

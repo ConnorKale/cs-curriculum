@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Axe
   - Spikes
+  - Turret_Projectile
+  - Player_Projectile
   layers:
   - Default
   - TransparentFX

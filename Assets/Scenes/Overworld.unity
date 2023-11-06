@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -842.3514, y: 705}
+  m_AnchoredPosition: {x: -184, y: 290}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &18261707
@@ -305,6 +305,84 @@ MonoBehaviour:
   target: {fileID: 0}
   projectile: {fileID: 5790822057519619805, guid: d181d0f6b0e116b4298e1e64b89f707e,
     type: 3}
+--- !u!1001 &71624586
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2261523492300725737, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2261523492300725737, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -44025399
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5819705
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5544465
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 165529280733435965, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7559335065579761908, guid: 4d2928cbf47ad4380919320e5d0734c7,
+        type: 3}
+      propertyPath: m_Name
+      value: CopperCoin (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d2928cbf47ad4380919320e5d0734c7, type: 3}
 --- !u!1001 &147949394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1387,7 +1465,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 16200af782af1ac4387f68e063a5784d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85289,7 +85367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -845, y: 634}
+  m_AnchoredPosition: {x: -184, y: 212}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1744221277
@@ -86132,3 +86210,4 @@ SceneRoots:
   - {fileID: 215807252}
   - {fileID: 1500019246}
   - {fileID: 960343081}
+  - {fileID: 71624586}
