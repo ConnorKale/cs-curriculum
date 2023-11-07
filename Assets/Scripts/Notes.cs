@@ -14,7 +14,6 @@
 
 /// To-Do:
 /// Make coins not respawn
-/// Ranged Attack For player
 /// Set Player's projectile timer legnth with Wells computer. Costomize all four scripts.
 /// Make Mobile Enemy move
 
@@ -32,6 +31,7 @@
 /// Create HealthMaanager
 /// Create CollectCoins
 /// Create movement script
+/// Ranged Attack For player
 
 
 

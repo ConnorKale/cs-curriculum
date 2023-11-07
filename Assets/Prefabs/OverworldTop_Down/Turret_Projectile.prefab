@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7101103389178533185}
   - component: {fileID: -3514862467880035125}
   - component: {fileID: 4327165216284067482}
-  - component: {fileID: -4060501456869925980}
+  - component: {fileID: 6791546838843351350}
   m_Layer: 0
   m_Name: Turret_Projectile
   m_TagString: Turret_Projectile
@@ -121,7 +121,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.08
---- !u!114 &-4060501456869925980
+--- !u!114 &6791546838843351350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -130,7 +130,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5790822057519619805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a70e7b045c67042a09043ce8f1d88e25, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d92a312ed28c74c916412a449ed99c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {x: 0, y: 0, z: 0}
