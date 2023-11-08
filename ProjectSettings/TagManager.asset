@@ -10,6 +10,10 @@ TagManager:
   - Spikes
   - Turret_Projectile
   - Player_Projectile
+  - MobileEnemyOuterVision
+  - MobileEnemyInnerVision
+  - Heart_Worth1
+  - Heart_Worth3
   layers:
   - Default
   - TransparentFX

@@ -121,6 +121,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b225f8e1e9e4644baef1e9965981b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  copperCoin: {fileID: 3462362578362087066, guid: 69c7343f050914c7787bbbe42c07b5b8,
+    type: 3}
+  heart: {fileID: 6437538945814868411, guid: 07498beb9df5c0d4ba7488c53b71f394, type: 3}
+  silverCoin: {fileID: 7559335065579761908, guid: 4d2928cbf47ad4380919320e5d0734c7,
+    type: 3}
 --- !u!1 &6074370204116875197
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362581888484945325}
   - component: {fileID: 1574064578472653034}
+  - component: {fileID: 2950884499725192449}
   m_Layer: 0
   m_Name: OuterVisionCollider
   m_TagString: MobileEnemyOuterVision
@@ -294,6 +301,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.4
+--- !u!114 &2950884499725192449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6649814035407383787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8de69769e8b16441a8bf268d48c6dc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9033622061347615989
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,6 +323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 49854701042699013}
   - component: {fileID: 1093518249268205697}
+  - component: {fileID: 1974956411026966464}
   m_Layer: 0
   m_Name: InnerVisionColider
   m_TagString: MobileEnemyInnerVision
@@ -361,3 +381,15 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.7
+--- !u!114 &1974956411026966464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9033622061347615989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e410d9e606e1524aae0cad8268bb663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -15,7 +15,7 @@
 /// To-Do:
 /// Make coins not respawn
 /// Set Player's projectile timer legnth with Wells computer. Costomize all four scripts.
-/// Make Mobile Enemy move
+/// Fix Heart Collider
 
 /// Orginize scripts folder?
 

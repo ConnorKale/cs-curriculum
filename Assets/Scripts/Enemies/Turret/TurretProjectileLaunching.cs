@@ -12,7 +12,7 @@ public class TurretProjectileLaunching : MonoBehaviour
     public GameObject target;
     private float timer;
     private float originalTimer;
-    public GameObject projectile;
+    public GameObject projectile; // This needs to be set in Unity.
     void Start()
     {
         originalTimer = 2;

@@ -6,8 +6,8 @@ using UnityEngine;
 public class HealthManager : MonoBehaviour
 {
     private HUD hud;
-    private bool iframes;
-    
+
+    private bool iframes;   
     private float timer;
     private float originalTimer;
     
@@ -40,22 +40,45 @@ public class HealthManager : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Spikes"))
         {
-            ChangeHealth(2);
+            ChangeHealth(-2);
         }
-
+        
         if (other.gameObject.CompareTag("Turret_Projectile"))
         {
-            ChangeHealth(1);
+            ChangeHealth(-1);
+            other.gameObject.SetActive(false);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Heart_Worth3"))
+        {
+            ChangeHealth(3);
+            Debug.Log("Heart_Worth3 Collected");
             other.gameObject.SetActive(false);
         }
     }
 
     void ChangeHealth(int amount)
     {
-        if (!iframes)
+        if (amount > 0)
         {
-            iframes = true;
-            hud.health -= amount;
+            hud.health += amount;
+            if (hud.health > hud.maxHealth)
+            {
+                hud.health = hud.maxHealth;
+            }
         }
+        
+        if (amount < 0)
+        {
+            if (!iframes)
+            {
+                iframes = true;
+                hud.health += amount;
+            }
+        }
+
     }
 }

@@ -89,20 +89,11 @@ public class PlayerProjectileLaunching : MonoBehaviour
             xDirection = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Debug.Log("Space");
-        }
-
-
         // Shooting projectiles:
         if (xDirection == 1) // We are looking right
-        {
-            Debug.Log("Looking Right");
-            
+        {            
             if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
             {
-                Debug.Log("Space");
                 Instantiate(rightProjectile, transform.position, transform.rotation);
 
             }
@@ -111,12 +102,9 @@ public class PlayerProjectileLaunching : MonoBehaviour
         }
         
         if (xDirection == -1)
-        {
-            Debug.Log("Looking Left");
-            
+        {            
             if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
             {
-                Debug.Log("Space");
                 Instantiate(leftProjectile, transform.position, transform.rotation);
 
             }
@@ -126,11 +114,8 @@ public class PlayerProjectileLaunching : MonoBehaviour
 
         if (yDirection == 1 && xDirection == 0)
         {
-            Debug.Log("Looking Up");
-
             if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
             {
-                Debug.Log("Space");
                 Instantiate(upProjectile, transform.position, transform.rotation);
 
             }
@@ -139,16 +124,12 @@ public class PlayerProjectileLaunching : MonoBehaviour
 
         if (yDirection == -1 && xDirection == 0)
         {
-            Debug.Log("Looking Down");
-
             if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
             {
-                Debug.Log("Space");
                 Instantiate(downProjectile, transform.position, transform.rotation);
 
             }
 
         }
-        // }
     }
 }
