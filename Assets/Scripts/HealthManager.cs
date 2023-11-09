@@ -48,9 +48,15 @@ public class HealthManager : MonoBehaviour
             ChangeHealth(-1);
             other.gameObject.SetActive(false);
         }
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            ChangeHealth(-3);
+        }
+
+        
     }
 
-    private void OnTriggerEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Heart_Worth3"))
         {

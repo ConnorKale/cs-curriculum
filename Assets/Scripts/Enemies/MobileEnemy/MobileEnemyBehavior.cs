@@ -29,7 +29,7 @@ public class MobileEnemyBehavior : MonoBehaviour
         maxHealth = 5;
         health = maxHealth;
         iframes = false;
-        originalTimer = 2;
+        originalTimer = 1;
         timer = originalTimer;
     }
 

@@ -15,7 +15,6 @@
 /// To-Do:
 /// Make coins not respawn
 /// Set Player's projectile timer legnth with Wells computer. Costomize all four scripts.
-/// Fix Heart Collider
 
 /// Orginize scripts folder?
 
@@ -32,6 +31,9 @@
 /// Create CollectCoins
 /// Create movement script
 /// Ranged Attack For player
+/// RNG (Randomized) Drops
+/// Health potions
+/// Fix Heart Collider
 
 
 
@@ -44,9 +46,7 @@
 /// Inventory
 /// Crouch
 /// Multiplayer (Do not attempt)
-/// RNG (Randomized) Drops
 /// Swaping Weapons
-/// Health potions
 /// Stats/Levels/Ability Scores for player
 
 
