@@ -1,4 +1,5 @@
 /// To switch from Visual Studio to Rider, go to Unity > Unity > Settings. CLICK REGENERATE PROJECT FILES.
+///         Debug.Log("String");     Puts messages in Unity's Console tab.
 
 
 /// General Notes:
@@ -12,38 +13,40 @@
 
 
 /// To-Do:
-/// Impliment Turrets
-/// Add Tiered Coins
 /// Make coins not respawn
-/// Ranged Attack For player
-/// Make Mobile Enemy move
+/// Set Player's projectile timer legnth with Wells computer. Costomize all four scripts.
 
 /// Orginize scripts folder?
 
 
 
 /// Done:
-/// Create movement script
-/// Create CollectCoins
-/// Create HealthMaanager
-/// Create HUD
-/// Make HUD the Game Manager that survives when scenes are loaded.
+/// Impliment Turrets
+/// Add Tiered Coins
+/// Attach HUD to Canvas
 /// Configure HUD
-/// /// Attach HUD to Canvas
+/// Make HUD the Game Manager that survives when scenes are loaded.
+/// Create HUD
+/// Create HealthMaanager
+/// Create CollectCoins
+/// Create movement script
+/// Ranged Attack For player
+/// RNG (Randomized) Drops
+/// Health potions
+/// Fix Heart Collider
 
 
 
 /// Possible Aditions:
+/// Black Hole
 /// Player Blocking Attacks
 /// Knockback
 /// New Enemies
 /// Shop/Crafting (Bad)
 /// Inventory
 /// Crouch
-/// Multiplayer (Extremly difficult, do not attempt)
-/// RNG (Randomized) Drops
+/// Multiplayer (Do not attempt)
 /// Swaping Weapons
-/// Health potions
 /// Stats/Levels/Ability Scores for player
 
 

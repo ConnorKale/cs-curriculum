@@ -34,7 +34,7 @@ public class HUD : MonoBehaviour
     void Start()
     {
         coins = 0;
-        maxHealth = 5;
+        maxHealth = 10;
         health = maxHealth;
     }
 

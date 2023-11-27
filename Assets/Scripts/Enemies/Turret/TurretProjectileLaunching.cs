@@ -12,8 +12,7 @@ public class TurretProjectileLaunching : MonoBehaviour
     public GameObject target;
     private float timer;
     private float originalTimer;
-    private bool timerCounting;
-    public GameObject projectile;
+    public GameObject projectile; // This needs to be set in Unity.
     void Start()
     {
         originalTimer = 2;
@@ -39,6 +38,14 @@ public class TurretProjectileLaunching : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             target = other.gameObject;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            target = null;
         }
     }
 }
