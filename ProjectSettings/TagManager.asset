@@ -11,6 +11,12 @@ TagManager:
   - Coin_Worth1
   - Coin_Worth10
   - Coin_Worth1000
+  - Heart_Worth3
+  - MobileEnemyOuterVision
+  - MobileEnemyInnerVision
+  - Heart_Worth1
+  - Player_Projectile
+  - Turret_Projectile
   layers:
   - Default
   - TransparentFX

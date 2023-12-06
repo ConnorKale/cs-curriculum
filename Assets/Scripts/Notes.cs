@@ -21,21 +21,34 @@
 
 
 /// Done:
+/// Fix Heart Collider
+/// Health potions
+/// RNG (Randomized) Drops
+/// Ranged Attack For player
 /// Impliment Turrets
 /// Add Tiered Coins
 /// Attach HUD to Canvas
 /// Configure HUD
 /// Make HUD the Game Manager that survives when scenes are loaded.
 /// Create HUD
-/// Create HealthMaanager
+/// Create HealthManager
 /// Create CollectCoins
 /// Create movement script
-/// Ranged Attack For player
-/// RNG (Randomized) Drops
-/// Health potions
-/// Fix Heart Collider
 
-
+/// Game Fetures:
+/// Player Movement
+/// Coin Collecting
+/// Health Manager
+/// HUD
+/// Tiered Coins
+/// Turrets w/ 3 colliders
+/// Turrets Shooting Projectiles
+/// Projectiles Moving
+/// Player Ranged Attacks
+/// Mobile Enemy movement
+/// Mobile Enemy HealthManager
+/// Mobile Enemy d20 drops
+/// 
 
 /// Possible Aditions:
 /// Black Hole
