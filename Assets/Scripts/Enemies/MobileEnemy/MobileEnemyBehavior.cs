@@ -73,6 +73,22 @@ public class MobileEnemyBehavior : MonoBehaviour
             other.gameObject.SetActive(false);
         }
 
+        if (other.gameObject.CompareTag("Coin_Worth1"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("Coin_Worth10"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("CoinWorth_1000"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
+
     }
 
     void ChangeHealth(int amount)
@@ -127,7 +143,4 @@ public class MobileEnemyBehavior : MonoBehaviour
         }
         gameObject.SetActive(false);
     }
-
 }
-
-// Coin is copper coin, axe is heart, bad copper coin is silver coin.

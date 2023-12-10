@@ -66,13 +66,14 @@ public class HealthManager : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Turret_Projectile"))
         {
-            ChangeHealth(2);
+            ChangeHealth(-1);
             other.gameObject.SetActive(false);
+            Debug.Log("Projectile Hit");
         }
 
     }
 
-    void ChangeHealth(int amount)
+    void ChangeHealth(int amount) /// Adds amount to the player's health.
     {
         if (amount > 0)
         {

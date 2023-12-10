@@ -42,7 +42,7 @@
 /// HUD
 /// Tiered Coins
 /// Turrets w/ 3 colliders
-/// Turrets Shooting Projectiles
+/// Turrets Shooting Projectiles - Shoots 2?
 /// Projectiles Moving
 /// Player Ranged Attacks
 /// Mobile Enemy movement

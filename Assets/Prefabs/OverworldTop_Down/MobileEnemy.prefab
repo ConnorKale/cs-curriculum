@@ -122,10 +122,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  copperCoin: {fileID: 3462362578362087066, guid: 69c7343f050914c7787bbbe42c07b5b8,
+  copperCoin: {fileID: 3079316018316631490, guid: 4f5cec4cfe9ff461fbb5ca5a1e045fa1,
     type: 3}
   heart: {fileID: 6437538945814868411, guid: 07498beb9df5c0d4ba7488c53b71f394, type: 3}
-  silverCoin: {fileID: 7559335065579761908, guid: 4d2928cbf47ad4380919320e5d0734c7,
+  silverCoin: {fileID: 2330665391935780567, guid: d6d9073e6435b44eca748d801398ae5b,
     type: 3}
 --- !u!1 &6074370204116875197
 GameObject:
@@ -154,7 +154,7 @@ Transform:
   m_GameObject: {fileID: 6074370204116875197}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.04, y: 0.17, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
