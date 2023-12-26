@@ -5,12 +5,12 @@ using UnityEngine;
 public class BlackHole : MonoBehaviour
 {
 
-    private int size; //Circle sprite's radius
+    public int size; //Circle sprite's radius
 
     // Start is called before the first frame update
     void Start()
     {
-        size = 100;
+        
     }
 
     // Update is called once per frame
