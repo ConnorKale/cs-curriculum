@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8150813252781776024}
   - component: {fileID: 5273738511075280793}
+  - component: {fileID: -745731180925911349}
   m_Layer: 0
   m_Name: SilverCoin
   m_TagString: Coin_Worth10
@@ -68,6 +69,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.18
+--- !u!114 &-745731180925911349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330665391935780567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f601785fc05254e98e404d721fb981, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6287300730106915181
 GameObject:
   m_ObjectHideFlags: 0
