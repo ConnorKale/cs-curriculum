@@ -51,6 +51,7 @@
 /// 
 
 /// Possible Aditions:
+/// Coin Collider Problems?
 /// Black Hole
 /// Player Blocking Attacks
 /// Knockback
