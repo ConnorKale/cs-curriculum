@@ -83,10 +83,34 @@ public class MobileEnemyBehavior : MonoBehaviour
             other.gameObject.SetActive(false);
         }
 
-        if (other.gameObject.CompareTag("CoinWorth_1000"))
+        if (other.gameObject.CompareTag("Coin_Worth1000"))
         {
             other.gameObject.SetActive(false);
         }
+    }
+
+    private void OnTriggerEnter2D(BoxCollider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("Coin_Worth1"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("Coin_Worth10"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
+        if (other.gameObject.CompareTag("Coin_Worth1000"))
+        {
+            other.gameObject.SetActive(false);
+        }
+
 
 
     }
