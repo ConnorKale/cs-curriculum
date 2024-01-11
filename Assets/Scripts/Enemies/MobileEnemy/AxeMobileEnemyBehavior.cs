@@ -7,7 +7,7 @@ using UnityEngine;
 /// !!! Problems: Use different Coliders.
 
 
-public class MobileEnemyBehavior : MonoBehaviour
+public class AxeMobileEnemyBehavior : MonoBehaviour
 {
     public GameObject target;
     
@@ -17,10 +17,7 @@ public class MobileEnemyBehavior : MonoBehaviour
     private float timer;
     private float originalTimer;
     
-    /// Nat one offers no reward for defeating the mobile enemy.
-    public GameObject copperCoin; //This is for a rolled 2-10.
-    public GameObject heart; // This is for a rolled 11-19.
-    public GameObject silverCoin; // This is for a natural 20.
+    public GameObject axe; //This is always dropped.
 
     // Start is called before the first frame update
     void Start()
@@ -39,7 +36,7 @@ public class MobileEnemyBehavior : MonoBehaviour
         /// Move:
         if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.005f);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.00625f);
         }
 
         /// Count down the timer.
@@ -66,26 +63,6 @@ public class MobileEnemyBehavior : MonoBehaviour
             ChangeHealth(-1);
             other.gameObject.SetActive(false);
             target = GameObject.FindWithTag("Player");
-        }
-
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            other.gameObject.SetActive(false);
-        }
-
-        if (other.gameObject.CompareTag("Coin_Worth1"))
-        {
-            other.gameObject.SetActive(false);
-        }
-
-        if (other.gameObject.CompareTag("Coin_Worth10"))
-        {
-            other.gameObject.SetActive(false);
-        }
-
-        if (other.gameObject.CompareTag("Coin_Worth1000"))
-        {
-            other.gameObject.SetActive(false);
         }
     }
 
@@ -145,26 +122,7 @@ public class MobileEnemyBehavior : MonoBehaviour
     void Die()
     {
         Debug.Log("Dead");
-        int d20 = Random.Range(1, 21);
-        if (d20 == 1)
-        {
-            Debug.Log("I think you rolled a nat one. You rolled " + d20 + ".");
-        }
-        if (d20 > 1 && d20 < 11)
-        {
-            Debug.Log($"I think you rolled 2-10. You rolled {d20}.");
-            Instantiate(copperCoin, transform.position, transform.rotation);
-        }
-        if (d20 > 10 && d20 < 20)
-        {
-            Debug.Log("I think you rolled 11-19. You rolled " + d20 + ".");
-            Instantiate(heart, transform.position, transform.rotation);
-        }
-        if (d20 == 20)
-        {
-            Debug.Log("I think you rolled 20. You rolled " + d20 + ".");
-            Instantiate(silverCoin, transform.position, transform.rotation);
-        }
+        Instantiate(axe, transform.position, transform.rotation);
         gameObject.SetActive(false);
     }
 }

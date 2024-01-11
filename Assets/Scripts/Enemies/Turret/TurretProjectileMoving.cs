@@ -27,7 +27,7 @@ public class TurretProjectileMoving : MonoBehaviour
 
         if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, 0.02f);
+            transform.position = Vector3.MoveTowards(transform.position, target, 0.01f);
         }
 
         if (transform.position == target)
@@ -35,10 +35,6 @@ public class TurretProjectileMoving : MonoBehaviour
             gameObject.SetActive(false);
         }
         
-        if (target != null)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, target, 0.01f);
-        }
 
     }
 }

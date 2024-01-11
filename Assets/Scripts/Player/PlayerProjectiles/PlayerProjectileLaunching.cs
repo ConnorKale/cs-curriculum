@@ -10,6 +10,8 @@ using UnityEngine;
 /// Prioritize looking left or right.
 public class PlayerProjectileLaunching : MonoBehaviour
 {
+    private HUD hud;
+    
     // Private variables that tell us what direction we're looking:
     private float xDirection;
     private float yDirection;
@@ -32,6 +34,8 @@ public class PlayerProjectileLaunching : MonoBehaviour
         yDirection = -1;
         xArrowDown = false;
         yArrowDown = false;
+        hud = GameObject.FindObjectOfType<HUD>();
+
     }
 
     // Update is called once per frame
@@ -94,8 +98,11 @@ public class PlayerProjectileLaunching : MonoBehaviour
         {            
             if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
             {
-                Instantiate(rightProjectile, transform.position, transform.rotation);
-
+                if (hud.coins > 0)
+                {
+                    Instantiate(rightProjectile, transform.position, transform.rotation);
+                    hud.coins -= 1;
+                }
             }
 
 
@@ -105,7 +112,11 @@ public class PlayerProjectileLaunching : MonoBehaviour
         {            
             if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
             {
-                Instantiate(leftProjectile, transform.position, transform.rotation);
+                if (hud.coins > 0)
+                {
+                    Instantiate(leftProjectile, transform.position, transform.rotation);
+                hud.coins -= 1;
+                }
 
             }
 
@@ -116,7 +127,11 @@ public class PlayerProjectileLaunching : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
             {
-                Instantiate(upProjectile, transform.position, transform.rotation);
+                if (hud.coins > 0)
+                {
+                    Instantiate(upProjectile, transform.position, transform.rotation);
+                hud.coins -= 1;
+                }
 
             }
 
@@ -126,7 +141,11 @@ public class PlayerProjectileLaunching : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
             {
-                Instantiate(downProjectile, transform.position, transform.rotation);
+                if (hud.coins > 0)
+                {
+                    Instantiate(downProjectile, transform.position, transform.rotation);
+                hud.coins -= 1;
+                }
 
             }
 

@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 7124824124649464515}
   - component: {fileID: -6153122075330643183}
   - component: {fileID: -8461552047070597192}
+  - component: {fileID: -6412296580429232630}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -288,3 +289,16 @@ MonoBehaviour:
     type: 3}
   rightProjectile: {fileID: 8986432799677579989, guid: 79c69fc6947d29a43abcb8240b95f2ab,
     type: 3}
+--- !u!114 &-6412296580429232630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 412193027009803667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67e010c55c0e24558bff06d883b13423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  haveAxe: 0
