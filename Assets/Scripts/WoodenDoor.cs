@@ -29,7 +29,7 @@ public class WoodenDoor : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log("Collision");
+//        Debug.Log("Collision");
         
         if (other.gameObject.CompareTag("Player") && collectAxe.haveAxe == true && topDownAnimatorController.IsAttacking == true)
         {

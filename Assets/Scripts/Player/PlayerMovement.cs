@@ -11,12 +11,14 @@ public class PlayerMovement : MonoBehaviour
     private float xVector;
     private float yDirection;
     private float yVector;
-    
+    Rigidbody2D rb2D;
+
     // Start is called before the first frame update
     void Start()
     {
         walkingSpeed = 4;
-        jumpForce = 2000;
+        jumpForce = 2;
+        rb2D = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -32,12 +34,18 @@ public class PlayerMovement : MonoBehaviour
             yVector = yDirection * walkingSpeed * Time.deltaTime;
             transform.position = transform.position + new Vector3(0, yVector, 0);
         }
-        if (overworld == false)
+        if (!overworld)
         {
-            if (Input.GetAxis("Vertical") > 0)
+            if (Input.GetKeyDown("space"))
             {
-                Debug.Log("Jumping");
-                yVector -= jumpForce;
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
+                if (hit.collider != null)
+                {
+                    Debug.Log("Jumping");
+                    yVector += jumpForce;
+                    transform.position = transform.position + new Vector3(0, yVector, 0);
+
+                }
             }
         }
         // Debug.Log(Input.GetAxis("Vertical"));
