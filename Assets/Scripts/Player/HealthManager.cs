@@ -62,12 +62,12 @@ public class HealthManager : MonoBehaviour
         {
             ChangeHealth(3);
             Debug.Log("Heart_Worth3 Collected");
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("Turret_Projectile"))
         {
             ChangeHealth(-1);
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             Debug.Log("Projectile Hit");
         }
 

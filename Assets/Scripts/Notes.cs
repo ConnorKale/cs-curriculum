@@ -13,6 +13,8 @@
 
 
 /// To-Do:
+/// Mobile Enemy Vision
+/// Cave Jumping + Raycasting
 /// Make coins not respawn
 /// Set Player's projectile timer legnth with Wells computer. Costomize all four scripts.
 

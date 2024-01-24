@@ -24,23 +24,23 @@ public class CollectCoins : MonoBehaviour
         if (other.gameObject.CompareTag("Coin_Worth1")) //Collect Copper Coins
         {
             hud.coins += 1;
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("Coin_Worth10")) //Collect Silver Coins
         {
             hud.coins += 10;
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
         }
         if (other.gameObject.CompareTag("Coin_Worth1000")) //Collect Gold Coins
         {
             hud.coins += 1000;
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
         }
 
         if (other.gameObject.CompareTag("Coin")) // This collects the original "coins".
         {
             hud.coins += 1;
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
         }
     }
 

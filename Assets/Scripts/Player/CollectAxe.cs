@@ -5,11 +5,12 @@ using UnityEngine;
 public class CollectAxe : MonoBehaviour
 {
     public bool haveAxe;
-    
+    private TopDown_AnimatorController topDownAnimatorController;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        topDownAnimatorController = GameObject.FindObjectOfType<TopDown_AnimatorController>();
     }
 
     // Update is called once per frame
@@ -25,6 +26,7 @@ public class CollectAxe : MonoBehaviour
             haveAxe = true;
             other.gameObject.SetActive(false);
             Debug.Log("Grabbed axe");
+            topDownAnimatorController.SwitchToAxe();
         }
     }
 }

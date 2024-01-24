@@ -22,7 +22,7 @@ public class PlayerProjectileDownMoving : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer < 0)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
 
     }

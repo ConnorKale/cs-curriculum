@@ -165,6 +165,6 @@ public class MobileEnemyBehavior : MonoBehaviour
             Debug.Log("I think you rolled 20. You rolled " + d20 + ".");
             Instantiate(silverCoin, transform.position, transform.rotation);
         }
-        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 }

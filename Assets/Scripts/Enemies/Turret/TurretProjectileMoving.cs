@@ -22,7 +22,7 @@ public class TurretProjectileMoving : MonoBehaviour
         
         if (timer < 0)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
 
         if (target != null)
@@ -32,7 +32,7 @@ public class TurretProjectileMoving : MonoBehaviour
 
         if (transform.position == target)
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
         
 

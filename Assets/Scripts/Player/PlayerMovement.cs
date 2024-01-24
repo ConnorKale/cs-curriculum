@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         walkingSpeed = 4;
-        jumpForce = 20;
+        jumpForce = 2000;
     }
 
     // Update is called once per frame
@@ -37,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
             if (Input.GetAxis("Vertical") > 0)
             {
                 Debug.Log("Jumping");
-                yVector += jumpForce;
+                yVector -= jumpForce;
             }
         }
         // Debug.Log(Input.GetAxis("Vertical"));
