@@ -19,7 +19,7 @@ public class Rotation : MonoBehaviour
     void Update()
     {
         rotation = (rotationSpeed*Time.deltaTime);
-        Debug.Log(string.Format("deltatime {0} rotation {1}", Time.deltaTime, rotation));
+        // Debug.Log(string.Format("deltatime {0} rotation {1}", Time.deltaTime, rotation));
         this.gameObject.transform.RotateAround(this.gameObject.transform.position, axis, rotation);
     }
 }

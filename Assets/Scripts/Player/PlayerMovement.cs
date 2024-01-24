@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public bool overworld;
     private float walkingSpeed;
+    private float jumpForce;
     private float xDirection;
     private float xVector;
     private float yDirection;
@@ -15,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         walkingSpeed = 4;
-        overworld = true;
+        jumpForce = 20;
     }
 
     // Update is called once per frame
@@ -31,5 +32,14 @@ public class PlayerMovement : MonoBehaviour
             yVector = yDirection * walkingSpeed * Time.deltaTime;
             transform.position = transform.position + new Vector3(0, yVector, 0);
         }
+        if (overworld == false)
+        {
+            if (Input.GetAxis("Vertical") > 0)
+            {
+                Debug.Log("Jumping");
+                yVector += jumpForce;
+            }
+        }
+        // Debug.Log(Input.GetAxis("Vertical"));
     }
 }

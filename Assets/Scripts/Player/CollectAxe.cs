@@ -20,10 +20,11 @@ public class CollectAxe : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("axe"))
+        if (other.gameObject.CompareTag("Axe"))
         {
             haveAxe = true;
             other.gameObject.SetActive(false);
+            Debug.Log("Grabbed axe");
         }
     }
 }
