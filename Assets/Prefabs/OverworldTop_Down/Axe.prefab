@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 4668079526467658351}
   - component: {fileID: 2399072710900510365}
   - component: {fileID: 1996527365673187554}
-  - component: {fileID: 4152403268502922431}
+  - component: {fileID: 6549364271614615059}
   m_Layer: 0
-  m_Name: MobileEnemy
+  m_Name: Axe
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +109,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4152403268502922431
+--- !u!114 &6549364271614615059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,11 +122,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  copperCoin: {fileID: 3079316018316631490, guid: 4f5cec4cfe9ff461fbb5ca5a1e045fa1,
-    type: 3}
-  heart: {fileID: 6437538945814868411, guid: 07498beb9df5c0d4ba7488c53b71f394, type: 3}
-  silverCoin: {fileID: 2330665391935780567, guid: d6d9073e6435b44eca748d801398ae5b,
-    type: 3}
+  copperCoin: {fileID: 0}
+  heart: {fileID: 0}
+  silverCoin: {fileID: 0}
 --- !u!1 &6074370204116875197
 GameObject:
   m_ObjectHideFlags: 0

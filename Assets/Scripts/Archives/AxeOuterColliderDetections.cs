@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InnerColliderDetection : MonoBehaviour
+public class AxeOuterColliderDetections : MonoBehaviour
 {
-    private MobileEnemyBehavior mem;
+    private AxeMobileEnemyBehavior amem;
     
     // Start is called before the first frame update
     void Start()
     {
-        mem = GetComponentInParent<MobileEnemyBehavior>();
+        amem = GetComponentInParent<AxeMobileEnemyBehavior>();
     }
 
     // Update is called once per frame
@@ -18,11 +18,11 @@ public class InnerColliderDetection : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            mem.target = other.gameObject;
+            amem.target = null;
         }
     }
 

@@ -9,7 +9,7 @@ public class OuterColliderDetections : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        mem = GameObject.FindObjectOfType<MobileEnemyBehavior>();
+        mem = GetComponentInParent<MobileEnemyBehavior>();
     }
 
     // Update is called once per frame

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -23,7 +24,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     void Start()
     {
         target = null;
-        maxHealth = 5;
+        maxHealth = 10;
         health = maxHealth;
         iframes = false;
         originalTimer = 1;
@@ -36,7 +37,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
         /// Move:
         if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.00625f);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.005f);
         }
 
         /// Count down the timer.
@@ -55,13 +56,13 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Spikes"))
         {
-            ChangeHealth(-2);
+            ChangeHealthIframes(-2);
         }
 
         if (other.gameObject.CompareTag("Player_Projectile"))
         {
             ChangeHealth(-1);
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
             target = GameObject.FindWithTag("Player");
         }
     }
@@ -70,55 +71,55 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Coin"))
         {
-            other.gameObject.SetActive(false);
+            Destroy(other);
         }
 
         if (other.gameObject.CompareTag("Coin_Worth1"))
         {
-            other.gameObject.SetActive(false);
+            Destroy(other);
         }
 
         if (other.gameObject.CompareTag("Coin_Worth10"))
         {
-            other.gameObject.SetActive(false);
+            Destroy(other);
         }
 
         if (other.gameObject.CompareTag("Coin_Worth1000"))
         {
-            other.gameObject.SetActive(false);
+            Destroy(other);
         }
 
 
 
+    }
+
+    void ChangeHealthIframes(int amount)
+    {
+        if (!iframes)
+        { 
+            iframes = true;
+            health += amount;
+            Debug.Log("Hit");
+            if (health <= 0)
+            { 
+                Die();
+            }
+        }
     }
 
     void ChangeHealth(int amount)
     {
-        if (amount > 0)
+        health += amount;
+        Debug.Log("Hit");
+        if (health > maxHealth)
         {
-            health += amount;
-            if (health > maxHealth)
-            {
-                health = maxHealth;
-            }
+            health = maxHealth;
         }
-        
-        if (amount < 0)
-        {
-            if (!iframes)
-            {
-                iframes = true;
-                health += amount;
-                Debug.Log("Hit");
-                if (health <= 0)
-                {
-                    Die();
-                }
-            }
+        if (health <= 0)
+        { 
+            Die();
         }
-
     }
-
     void Die()
     {
         Debug.Log("Dead");
