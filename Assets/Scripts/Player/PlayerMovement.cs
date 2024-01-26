@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,18 +7,16 @@ public class PlayerMovement : MonoBehaviour
 {
     public bool overworld;
     private float walkingSpeed;
-    private float jumpForce;
     private float xDirection;
     private float xVector;
     private float yDirection;
     private float yVector;
     Rigidbody2D rb2D;
-
+    private bool jumped;
     // Start is called before the first frame update
     void Start()
     {
         walkingSpeed = 4;
-        jumpForce = 2;
         rb2D = GetComponent<Rigidbody2D>();
     }
 
@@ -34,20 +33,17 @@ public class PlayerMovement : MonoBehaviour
             yVector = yDirection * walkingSpeed * Time.deltaTime;
             transform.position = transform.position + new Vector3(0, yVector, 0);
         }
-        if (!overworld)
-        {
-            if (Input.GetKeyDown("space"))
-            {
-                RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up);
-                if (hit.collider != null)
-                {
-                    Debug.Log("Jumping");
-                    yVector += jumpForce;
-                    transform.position = transform.position + new Vector3(0, yVector, 0);
-
-                }
-            }
-        }
         // Debug.Log(Input.GetAxis("Vertical"));
+        jumped = false;
+    }
+
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (!overworld && !jumped && other.gameObject.CompareTag("CaveGround") && Input.GetKey("space"))
+        {
+            Debug.Log("Jumping");
+            jumped = true;
+            rb2D.AddForce(Vector2.up * 2, ForceMode2D.Impulse);
+        }
     }
 }

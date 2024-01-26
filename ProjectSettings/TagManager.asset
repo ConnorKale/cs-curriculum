@@ -17,6 +17,7 @@ TagManager:
   - Heart_Worth1
   - Player_Projectile
   - Turret_Projectile
+  - CaveGround
   layers:
   - Default
   - TransparentFX
