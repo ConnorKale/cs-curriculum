@@ -37,7 +37,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
         /// Move:
         if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.005f);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.00385840734641021f);
         }
 
         /// Count down the timer.

@@ -36,23 +36,17 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            // Debug.Log(Input.GetAxis("Vertical"));
             canJump = Physics2D.Raycast(transform.position, Vector2.down, 1);
             Debug.DrawRay(transform.position, Vector2.down, Color.red);
-        
+            Debug.Log(canJump);
+
         
             if (canJump && Input.GetKeyDown("space"))
             {
-                Debug.Log("Jumping");
                
                 rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             }
             
         }
-    }
-
-    private void OnCollisionStay2D(Collision2D other)
-    {
-        
     }
 }

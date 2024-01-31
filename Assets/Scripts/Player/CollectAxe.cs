@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class CollectAxe : MonoBehaviour
 {
-    public bool haveAxe;
+    private HUD hud;
     private TopDown_AnimatorController topDownAnimatorController;
 
     // Start is called before the first frame update
     void Start()
     {
+        hud = GameObject.FindObjectOfType<HUD>();
         topDownAnimatorController = GameObject.FindObjectOfType<TopDown_AnimatorController>();
+
+        if (hud.weapon == 1)
+        {
+            topDownAnimatorController.SwitchToAxe();
+        }
     }
 
     // Update is called once per frame
@@ -23,7 +29,10 @@ public class CollectAxe : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Axe"))
         {
-            haveAxe = true;
+            if (hud.weapon < 1)
+            {
+                hud.weapon = 1;
+            }
             other.gameObject.SetActive(false);
             Debug.Log("Grabbed axe");
             topDownAnimatorController.SwitchToAxe();

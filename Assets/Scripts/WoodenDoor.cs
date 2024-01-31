@@ -6,13 +6,13 @@ using UnityEngine;
 public class WoodenDoor : MonoBehaviour
 {
     public GameObject innerDoor;
-    private CollectAxe collectAxe;
     private TopDown_AnimatorController topDownAnimatorController;
+    private HUD hud;
 
     // Start is called before the first frame update
     void Start()
     {
-        collectAxe = GameObject.FindObjectOfType<CollectAxe>();
+        hud = GameObject.FindObjectOfType<HUD>();
         topDownAnimatorController = GameObject.FindObjectOfType<TopDown_AnimatorController>();
 
 
@@ -31,7 +31,7 @@ public class WoodenDoor : MonoBehaviour
     {
 //        Debug.Log("Collision");
         
-        if (other.gameObject.CompareTag("Player") && collectAxe.haveAxe == true && topDownAnimatorController.IsAttacking == true)
+        if (other.gameObject.CompareTag("Player") && hud.weapon == 1 && topDownAnimatorController.IsAttacking == true)
         {
             innerDoor.SetActive(false);
             gameObject.SetActive(false);
