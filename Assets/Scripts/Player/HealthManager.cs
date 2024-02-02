@@ -64,6 +64,13 @@ public class HealthManager : MonoBehaviour
             Debug.Log("Heart_Worth3 Collected");
             Destroy(other.gameObject);
         }
+        if (other.gameObject.CompareTag("Heart_Worth50"))
+        {
+            hud.health = hud.maxHealth;
+            Debug.Log("Heart_Worth50 Collected");
+            Destroy(other.gameObject);
+        }
+
         if (other.gameObject.CompareTag("Turret_Projectile"))
         {
             ChangeHealth(-1);

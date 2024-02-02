@@ -1487,12 +1487,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  weapon: 0
   health: 0
   maxHealth: 0
   CollectCoins: {fileID: 1750497387}
   HealthManager: {fileID: 1750497386}
+  CollectAxe: {fileID: 0}
   coinText: {fileID: 18261707}
   healthText: {fileID: 1744221277}
+  weaponText: {fileID: 0}
 --- !u!1001 &387954747
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41535,12 +41538,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  weapon: 0
   health: 0
   maxHealth: 0
   CollectCoins: {fileID: 0}
   HealthManager: {fileID: 0}
+  CollectAxe: {fileID: 0}
   coinText: {fileID: 18261707}
   healthText: {fileID: 1744221277}
+  weaponText: {fileID: 0}
 --- !u!4 &634286106
 Transform:
   m_ObjectHideFlags: 0
@@ -88246,12 +88252,12 @@ PrefabInstance:
     - target: {fileID: 412193027009803671, guid: 34448014912494d33b041af48acd0291,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.7
+      value: -3.254
       objectReference: {fileID: 0}
     - target: {fileID: 412193027009803671, guid: 34448014912494d33b041af48acd0291,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.8
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 412193027009803671, guid: 34448014912494d33b041af48acd0291,
         type: 3}
@@ -89308,12 +89314,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  weapon: 0
   health: 0
   maxHealth: 0
   CollectCoins: {fileID: 0}
   HealthManager: {fileID: 0}
+  CollectAxe: {fileID: 0}
   coinText: {fileID: 18261707}
   healthText: {fileID: 1744221277}
+  weaponText: {fileID: 0}
 --- !u!4 &2020439348
 Transform:
   m_ObjectHideFlags: 0
