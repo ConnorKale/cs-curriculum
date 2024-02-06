@@ -24,7 +24,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     void Start()
     {
         target = null;
-        maxHealth = 10;
+        maxHealth = 5;
         health = maxHealth;
         iframes = false;
         originalTimer = 1;

@@ -26,7 +26,7 @@ public class MobileEnemyBehavior : MonoBehaviour
     void Start()
     {
         target = null;
-        maxHealth = 5;
+        maxHealth = 3;
         health = maxHealth;
         iframes = false;
         originalTimer = 1;
