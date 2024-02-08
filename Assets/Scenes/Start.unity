@@ -3264,10 +3264,20 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6347154190651817683, guid: cddc0eae8679c4344b7e477729e7843b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7386698514500486556, guid: cddc0eae8679c4344b7e477729e7843b,
         type: 3}
       propertyPath: m_Name
       value: Player_Shovel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7386698514500486556, guid: cddc0eae8679c4344b7e477729e7843b,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2704144010526209991, guid: cddc0eae8679c4344b7e477729e7843b, type: 3}

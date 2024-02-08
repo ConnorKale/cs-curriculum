@@ -18,11 +18,13 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     private float timer;
     private float originalTimer;
     
-    public GameObject axe; //This is always dropped.
-
+    private HUD hud;
+    public GameObject axe; //This is dropped if you have no axe.
+    public GameObject silverCoin;
     // Start is called before the first frame update
     void Start()
     {
+        hud = GameObject.FindObjectOfType<HUD>();
         target = null;
         maxHealth = 5;
         health = maxHealth;
@@ -123,7 +125,16 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     void Die()
     {
         Debug.Log("Dead");
-        Instantiate(axe, transform.position, transform.rotation);
+        if (hud.weapon == 0)
+        {
+            Instantiate(axe, transform.position, transform.rotation);
+
+        }
+        else
+        {
+            Instantiate(silverCoin, transform.position, transform.rotation);
+
+        }
         gameObject.SetActive(false);
     }
 }

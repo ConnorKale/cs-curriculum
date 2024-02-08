@@ -96,7 +96,7 @@ public class PlayerProjectileLaunching : MonoBehaviour
         // Shooting projectiles:
         if (xDirection == 1) // We are looking right
         {            
-            if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
+            if (Input.GetKeyDown(KeyCode.Z)) // Z is pressed
             {
                 if (hud.coins > 0)
                 {
@@ -110,7 +110,7 @@ public class PlayerProjectileLaunching : MonoBehaviour
         
         if (xDirection == -1)
         {            
-            if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
+            if (Input.GetKeyDown(KeyCode.Z)) // Z is pressed
             {
                 if (hud.coins > 0)
                 {
@@ -125,7 +125,7 @@ public class PlayerProjectileLaunching : MonoBehaviour
 
         if (yDirection == 1 && xDirection == 0)
         {
-            if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
+            if (Input.GetKeyDown(KeyCode.Z)) // Z is pressed
             {
                 if (hud.coins > 0)
                 {
@@ -139,7 +139,7 @@ public class PlayerProjectileLaunching : MonoBehaviour
 
         if (yDirection == -1 && xDirection == 0)
         {
-            if (Input.GetKeyDown(KeyCode.Space)) // Space is pressed
+            if (Input.GetKeyDown(KeyCode.Z)) // Z is pressed
             {
                 if (hud.coins > 0)
                 {

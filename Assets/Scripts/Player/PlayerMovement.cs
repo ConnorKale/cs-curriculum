@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
             Debug.Log(canJump);
 
         
-            if (canJump && Input.GetKeyDown("space"))
+            if (canJump && Input.GetKeyDown(KeyCode.X))
             {
                
                 rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
