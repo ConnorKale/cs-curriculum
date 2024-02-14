@@ -11,6 +11,8 @@ public class HUD : MonoBehaviour
     public int health;
     public int maxHealth;
 
+    public bool cp1;
+    
     public CollectCoins CollectCoins;
     public HealthManager HealthManager;
     public CollectAxe CollectAxe;
@@ -40,6 +42,8 @@ public class HUD : MonoBehaviour
         maxHealth = 50;
         weapon = 0;
         health = maxHealth;
+        
+        cp1 = false;
     }
 
     // Update is called once per frame
