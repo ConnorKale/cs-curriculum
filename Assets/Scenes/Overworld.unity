@@ -45703,6 +45703,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1861684688628404187, guid: 4f5cec4cfe9ff461fbb5ca5a1e045fa1,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861684688628404187, guid: 4f5cec4cfe9ff461fbb5ca5a1e045fa1,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1846094
       objectReference: {fileID: 0}
@@ -93875,12 +93880,12 @@ PrefabInstance:
     - target: {fileID: 412193027009803671, guid: 34448014912494d33b041af48acd0291,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.254
+      value: -0.64
       objectReference: {fileID: 0}
     - target: {fileID: 412193027009803671, guid: 34448014912494d33b041af48acd0291,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.2
+      value: -0.81
       objectReference: {fileID: 0}
     - target: {fileID: 412193027009803671, guid: 34448014912494d33b041af48acd0291,
         type: 3}
@@ -95451,6 +95456,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MobileEnemy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668079526467658351, guid: fbdc99957549444bfba281e61d9d218c,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.99999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4668079526467658351, guid: fbdc99957549444bfba281e61d9d218c,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.99999
       objectReference: {fileID: 0}
     - target: {fileID: 4668079526467658351, guid: fbdc99957549444bfba281e61d9d218c,
         type: 3}
