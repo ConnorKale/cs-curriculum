@@ -3340,8 +3340,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6437538945814868411, guid: 07498beb9df5c0d4ba7488c53b71f394,
         type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6437538945814868411, guid: 07498beb9df5c0d4ba7488c53b71f394,
+        type: 3}
       propertyPath: m_TagString
       value: Heart_Worth50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8954195823984166723, guid: 07498beb9df5c0d4ba7488c53b71f394,
+        type: 3}
+      propertyPath: m_Layer
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9121907325011339362, guid: 07498beb9df5c0d4ba7488c53b71f394,
         type: 3}

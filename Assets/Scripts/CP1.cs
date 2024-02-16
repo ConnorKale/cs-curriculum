@@ -6,13 +6,13 @@ using UnityEngine;
 public class CP1 : MonoBehaviour
 {
     private HUD hud;
-    private Platformer_Animator pac;
+    private Platformer_Animator pa;
     
     // Start is called before the first frame update
     void Start()
     {
         hud = GameObject.FindObjectOfType<HUD>();
-        pac = GameObject.FindObjectOfType<Platformer_Animator>();
+        pa = GameObject.FindObjectOfType<Platformer_Animator>();
         
         if (hud.cp1)
             gameObject.SetActive(false);
@@ -25,11 +25,13 @@ public class CP1 : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        Debug.Log(pa.IsAttacking);
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Player") && pac.IsAttacking)
+        Debug.Log("Hitting something");
+        if (other.gameObject.CompareTag("Player") && pa.IsAttacking)
         {
             hud.cp1 = true;
             gameObject.SetActive(false);
