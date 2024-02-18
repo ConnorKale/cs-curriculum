@@ -15,13 +15,16 @@ public class StartCanvasManager : MonoBehaviour
     void Start()
     {
         hud = GameObject.FindObjectOfType<HUD>();
+
+        Object[] allHuds = GameObject.FindObjectsOfType<HUD>();
+        Debug.Log($"cave using HUD {hud.name} out of {allHuds.Length} huds");
     }
 
     // Update is called once per frame
     void Update()
     {
-        coinTextStart.text = "Coins: " + hud.coins;
-        healthTextStart.text = "Health: " + hud.health;
+        coinTextStart.text = $"Coins: {hud.coins}";
+        healthTextStart.text = $"Health: {hud.health}";
         if (hud.weapon == 0)
         {
             weaponTextStart.text = "Weapon: Shovel";

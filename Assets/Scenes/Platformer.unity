@@ -253,6 +253,27 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f5cec4cfe9ff461fbb5ca5a1e045fa1, type: 3}
+--- !u!1 &254907331 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2184945246440137074, guid: d6c19a0e05ef649fa9d4185e7c736731,
+    type: 3}
+  m_PrefabInstance: {fileID: 2019325702}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &254907335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254907331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e1b3c9311319b245aba22e42a8d2749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vertical: 1
+  originalTimer: 6.28
+  originalVelocity: -5.5
 --- !u!1 &392741277
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,10 +307,15 @@ MonoBehaviour:
   weapon: 0
   health: 0
   maxHealth: 0
+  door: 0
   cp1: 0
+  aftercp1: 0
+  cp2: 0
+  aftercp2: 0
   CollectCoins: {fileID: 0}
   HealthManager: {fileID: 0}
   CollectAxe: {fileID: 0}
+  name: PlatformerHUD
 --- !u!4 &392741279
 Transform:
   m_ObjectHideFlags: 0
@@ -15642,6 +15668,11 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3613895582600187363, guid: cddc0eae8679c4344b7e477729e7843b,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.08
+      objectReference: {fileID: 0}
     - target: {fileID: 6347154190651817683, guid: cddc0eae8679c4344b7e477729e7843b,
         type: 3}
       propertyPath: m_Layer
@@ -16189,10 +16220,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Platform (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3358711545213860189, guid: d6c19a0e05ef649fa9d4185e7c736731, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2184945246440137074, guid: d6c19a0e05ef649fa9d4185e7c736731,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 254907335}
   m_SourcePrefab: {fileID: 100100000, guid: d6c19a0e05ef649fa9d4185e7c736731, type: 3}
 --- !u!1001 &2086915091
 PrefabInstance:

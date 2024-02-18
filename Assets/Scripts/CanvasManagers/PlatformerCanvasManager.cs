@@ -20,8 +20,8 @@ public class PlatformerCanvasManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinTextPlatformer.text = "Coins: " + hud.coins;
-        healthTextPlatformer.text = "Health: " + hud.health;
+        coinTextPlatformer.text = $"Coins: {hud.coins}";
+        healthTextPlatformer.text = $"Health: {hud.health}";
         if (hud.weapon == 0)
         {
             weaponTextPlatformer.text = "Weapon: Shovel";

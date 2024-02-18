@@ -171,10 +171,15 @@ MonoBehaviour:
   weapon: 0
   health: 0
   maxHealth: 0
+  door: 0
   cp1: 0
+  aftercp1: 0
+  cp2: 0
+  aftercp2: 0
   CollectCoins: {fileID: 0}
   HealthManager: {fileID: 0}
   CollectAxe: {fileID: 0}
+  name: Start HUD
 --- !u!1 &347874949
 GameObject:
   m_ObjectHideFlags: 0
@@ -3803,6 +3808,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3613895582600187363, guid: cddc0eae8679c4344b7e477729e7843b,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6347154190651817683, guid: cddc0eae8679c4344b7e477729e7843b,
         type: 3}
       propertyPath: m_Layer
@@ -3831,6 +3841,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1856841612}
+    - targetCorrespondingSourceObject: {fileID: 7386698514500486556, guid: cddc0eae8679c4344b7e477729e7843b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1856841613}
   m_SourcePrefab: {fileID: 100100000, guid: cddc0eae8679c4344b7e477729e7843b, type: 3}
 --- !u!1 &1856841597 stripped
 GameObject:
@@ -3864,6 +3878,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   overworld: 0
   jumpForce: 7
+--- !u!114 &1856841613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856841597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38ee895bc6baf04cbfdfdd5b0cce22b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upProjectile: {fileID: 305232771306017320, guid: fad4a54c74cf8994390c54b7aa4f1e4b,
+    type: 3}
+  downProjectile: {fileID: 5497802085804050413, guid: 8222d647644cf4a4199defdbd68e502b,
+    type: 3}
+  leftProjectile: {fileID: 5578344013116759036, guid: 16e8bbfb922814445b72661fc18fc6a6,
+    type: 3}
+  rightProjectile: {fileID: 8986432799677579989, guid: 79c69fc6947d29a43abcb8240b95f2ab,
+    type: 3}
 --- !u!1001 &1866711243
 PrefabInstance:
   m_ObjectHideFlags: 0

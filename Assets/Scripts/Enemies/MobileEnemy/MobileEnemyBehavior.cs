@@ -101,7 +101,7 @@ public class MobileEnemyBehavior : MonoBehaviour
         { 
             iframes = true;
             health += amount;
-            Debug.Log("Hit");
+//          Debug.Log("Hit");
             if (health <= 0)
             { 
                 Die();
@@ -127,25 +127,25 @@ public class MobileEnemyBehavior : MonoBehaviour
     
     void Die()
     {
-        Debug.Log("Dead");
+//      Debug.Log("Dead");
         int d20 = Random.Range(1, 21);
         if (d20 == 1)
         {
-            Debug.Log("I think you rolled a nat one. You rolled " + d20 + ".");
+//            Debug.Log("I think you rolled a nat one. You rolled " + d20 + ".");
         }
         if (d20 > 1 && d20 < 11)
         {
-            Debug.Log($"I think you rolled 2-10. You rolled {d20}.");
+//            Debug.Log($"I think you rolled 2-10. You rolled {d20}.");
             Instantiate(copperCoin, transform.position, transform.rotation);
         }
         if (d20 > 10 && d20 < 20)
         {
-            Debug.Log("I think you rolled 11-19. You rolled " + d20 + ".");
+//            Debug.Log("I think you rolled 11-19. You rolled " + d20 + ".");
             Instantiate(heart, transform.position, transform.rotation);
         }
         if (d20 == 20)
         {
-            Debug.Log("I think you rolled 20. You rolled " + d20 + ".");
+//            Debug.Log("I think you rolled 20. You rolled " + d20 + ".");
             Instantiate(silverCoin, transform.position, transform.rotation);
         }
         Destroy(gameObject);

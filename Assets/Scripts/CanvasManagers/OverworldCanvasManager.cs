@@ -15,14 +15,16 @@ public class OverworldCanvasManager : MonoBehaviour
     void Start()
     {
         hud = GameObject.FindObjectOfType<HUD>();
-        Debug.Log(hud.ToString());
+
+        Object[] allHuds = GameObject.FindObjectsOfType<HUD>();
+        Debug.Log($"Overworld using HUD {hud.name} out of {allHuds.Length} huds");
     }
 
     // Update is called once per frame
     void Update()
     {
-        coinTextOverworld.text = "Coins: " + hud.coins;
-        healthTextOverworld.text = "Health: " + hud.health;
+        coinTextOverworld.text = $"Coins: {hud.coins}";
+        healthTextOverworld.text = $"Health: {hud.health}";
         if (hud.weapon == 0)
         {
             weaponTextOverworld.text = "Weapon: Shovel";

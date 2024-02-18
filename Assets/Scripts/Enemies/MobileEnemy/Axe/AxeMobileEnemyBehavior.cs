@@ -101,7 +101,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
         { 
             iframes = true;
             health += amount;
-            Debug.Log("Hit");
+ //         Debug.Log("Hit");
             if (health <= 0)
             { 
                 Die();
@@ -112,7 +112,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     void ChangeHealth(int amount)
     {
         health += amount;
-        Debug.Log("Hit");
+//      Debug.Log("Hit");
         if (health > maxHealth)
         {
             health = maxHealth;
@@ -124,7 +124,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     }
     void Die()
     {
-        Debug.Log("Dead");
+//      Debug.Log("Dead");
         if (hud.weapon == 0)
         {
             Instantiate(axe, transform.position, transform.rotation);

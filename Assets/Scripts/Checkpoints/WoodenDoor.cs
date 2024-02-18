@@ -21,9 +21,14 @@ public class WoodenDoor : MonoBehaviour
     void Update()
     {
         // Debug.Log("Update");
-        if (topDownAnimatorController.IsAttacking == true)
+//     if (topDownAnimatorController.IsAttacking == true)
+//      {
+//          Debug.Log("Swinging");
+//      }
+        if (hud.door)
         {
-            Debug.Log("Swinging");
+            innerDoor.SetActive(false);
+            gameObject.SetActive(false);
         }
     }
 
@@ -33,8 +38,7 @@ public class WoodenDoor : MonoBehaviour
         
         if (other.gameObject.CompareTag("Player") && hud.weapon == 1 && topDownAnimatorController.IsAttacking == true)
         {
-            innerDoor.SetActive(false);
-            gameObject.SetActive(false);
+            hud.door = true;
         }
     }
 }

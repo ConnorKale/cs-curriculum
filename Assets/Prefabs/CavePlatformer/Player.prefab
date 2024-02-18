@@ -215,7 +215,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.02}
+  m_Offset: {x: 0, y: -0.08}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -252,7 +252,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8028410a9dee4433be9295c86265d74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Coins: 0
 --- !u!114 &2704144010526209991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,3 +265,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   overworld: 0
+  jumpForce: 0

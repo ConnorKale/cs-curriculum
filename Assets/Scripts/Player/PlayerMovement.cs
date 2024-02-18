@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
         {
             canJump = Physics2D.Raycast(transform.position, Vector2.down, 1f);
             Debug.DrawRay(transform.position, Vector2.down, Color.red);
-            Debug.Log(canJump);
+//            Debug.Log(canJump);
 
         
             if (canJump && Input.GetKeyDown(KeyCode.X))
