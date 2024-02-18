@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 
 public class HUD : MonoBehaviour
 {
@@ -16,14 +15,10 @@ public class HUD : MonoBehaviour
     public CollectCoins CollectCoins;
     public HealthManager HealthManager;
     public CollectAxe CollectAxe;
-
-    public TextMeshProUGUI coinText;
-    public TextMeshProUGUI healthText;
-    public TextMeshProUGUI weaponText;
     //Awake is called before anything else.
     void Awake()
     {
-        if (hud != null && hud != this)
+        if (hud != null && hud != this) // If there's a hud and it's not me
         {
             Destroy(gameObject);
         }
@@ -49,16 +44,8 @@ public class HUD : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        coinText.text = "Coins: " + coins;
-        healthText.text = "Health: " + health;
-        if (weapon == 0)
-        {
-            weaponText.text = "Weapon: Shovel";
-        }
-        
-        if (weapon == 1)
-        {
-            weaponText.text = "Weapon: Axe";
-        }
+       
+//        Debug.Log("weapon = "+weapon);
+//        Debug.Log("Text should say " +weaponText.text);
     }
 }
