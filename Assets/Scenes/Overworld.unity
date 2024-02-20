@@ -43684,7 +43684,11 @@ MonoBehaviour:
   weapon: 0
   health: 0
   maxHealth: 0
+  door: 0
   cp1: 0
+  aftercp1: 0
+  cp2: 0
+  aftercp2: 0
   CollectCoins: {fileID: 0}
   HealthManager: {fileID: 0}
   CollectAxe: {fileID: 0}
