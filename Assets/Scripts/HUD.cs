@@ -6,6 +6,7 @@ public class HUD : MonoBehaviour
 {
     public static HUD hud;
     public int coins;
+    public int maxCoins;
     public int weapon;
     public int health;
     public int maxHealth;
@@ -15,6 +16,7 @@ public class HUD : MonoBehaviour
     public bool aftercp1;
     public bool cp2;
     public bool aftercp2;
+    public bool boss;
     
     public CollectCoins CollectCoins;
     public HealthManager HealthManager;
@@ -45,7 +47,8 @@ public class HUD : MonoBehaviour
     void Start()
     {
         coins = 0;
-        maxHealth = 50;
+        maxCoins = 1024;
+        maxHealth = 16;
         weapon = 0;
         health = maxHealth;
         

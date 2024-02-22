@@ -42,6 +42,11 @@ public class CollectCoins : MonoBehaviour
             hud.coins += 1;
             Destroy(other.gameObject);
         }
+
+        if (hud.coins > hud.maxCoins)
+        {
+            hud.coins = hud.maxCoins;
+        }
     }
 
 }
