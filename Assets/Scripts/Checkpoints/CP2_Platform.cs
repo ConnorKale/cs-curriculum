@@ -45,10 +45,5 @@ public class CP2_Platform : MonoBehaviour
                 transform.position = transform.position + new Vector3((velocity * Time.deltaTime), 0, 0);
             }
         }
-
-        if (hud.aftercp2)
-        {
-            gameObject.SetActive(false);
-        }
     }
 }

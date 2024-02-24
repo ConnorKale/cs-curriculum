@@ -21,6 +21,7 @@ public class MobileEnemyBehavior : MonoBehaviour
     public GameObject copperCoin; //This is for a rolled 2-10.
     public GameObject heart; // This is for a rolled 11-19.
     public GameObject silverCoin; // This is for a natural 20.
+    private float velocity;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +32,7 @@ public class MobileEnemyBehavior : MonoBehaviour
         iframes = false;
         originalTimer = 1;
         timer = originalTimer;
+        velocity = 2.718281828459045f;
     }
 
     // Update is called once per frame
@@ -39,7 +41,7 @@ public class MobileEnemyBehavior : MonoBehaviour
         /// Move:
         if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.003f);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, velocity*Time.deltaTime);
         }
 
         /// Count down the timer.

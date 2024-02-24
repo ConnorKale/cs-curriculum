@@ -21,6 +21,9 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
     private HUD hud;
     public GameObject axe; //This is dropped if you have no axe.
     public GameObject silverCoin;
+
+    private float velocity;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +34,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
         iframes = false;
         originalTimer = 1;
         timer = originalTimer;
+        velocity = 3.141592653589790f;
     }
 
     // Update is called once per frame
@@ -39,7 +43,7 @@ public class AxeMobileEnemyBehavior : MonoBehaviour
         /// Move:
         if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, 0.00385840734641021f);
+            transform.position = Vector3.MoveTowards(transform.position, target.transform.position, velocity * Time.deltaTime);
         }
 
         /// Count down the timer.

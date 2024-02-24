@@ -441,15 +441,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   coins: 0
   maxCoins: 0
+  lastSavedCoins: 0
   weapon: 0
+  lastSavedWeapon: 0
   health: 0
   maxHealth: 0
+  lastSavedHealth: 0
   door: 0
+  lastSavedDoor: 0
   cp1: 0
+  lastSavedcp1: 0
   aftercp1: 0
+  lastSavedAftercp1: 0
   cp2: 0
-  aftercp2: 0
-  boss: 0
+  lastSavedcp2: 0
   CollectCoins: {fileID: 0}
   HealthManager: {fileID: 0}
   CollectAxe: {fileID: 0}
@@ -637,25 +642,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boss
       objectReference: {fileID: 0}
-    - target: {fileID: 6333018648864578109, guid: 0bade001f0489415cb07d37f150fc005,
+    - target: {fileID: 2983880670195699678, guid: 0bade001f0489415cb07d37f150fc005,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 6333018648864578109, guid: 0bade001f0489415cb07d37f150fc005,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 16
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6333018648864578109, guid: 0bade001f0489415cb07d37f150fc005,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.3318005
+      value: -5.63
       objectReference: {fileID: 0}
     - target: {fileID: 6333018648864578109, guid: 0bade001f0489415cb07d37f150fc005,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 79.36
+      value: 82.5
       objectReference: {fileID: 0}
     - target: {fileID: 6333018648864578109, guid: 0bade001f0489415cb07d37f150fc005,
         type: 3}
@@ -12700,13 +12700,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5830967821167791661, guid: df229e13d3b5a7d4487b64ee824ee13b,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830967821167791661, guid: df229e13d3b5a7d4487b64ee824ee13b,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5830967821167791661, guid: df229e13d3b5a7d4487b64ee824ee13b,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.5
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 5830967821167791661, guid: df229e13d3b5a7d4487b64ee824ee13b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 77.25
+      value: 77.75
       objectReference: {fileID: 0}
     - target: {fileID: 5830967821167791661, guid: df229e13d3b5a7d4487b64ee824ee13b,
         type: 3}
@@ -12748,6 +12758,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5830967821167791661, guid: df229e13d3b5a7d4487b64ee824ee13b,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8518844935661816063, guid: df229e13d3b5a7d4487b64ee824ee13b,
         type: 3}
       propertyPath: m_Name
@@ -12755,14 +12770,56 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8741236927416490199, guid: df229e13d3b5a7d4487b64ee824ee13b,
         type: 3}
+      propertyPath: m_Size.x
+      value: 0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741236927416490199, guid: df229e13d3b5a7d4487b64ee824ee13b,
+        type: 3}
       propertyPath: m_Size.y
-      value: 0.7
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741236927416490199, guid: df229e13d3b5a7d4487b64ee824ee13b,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741236927416490199, guid: df229e13d3b5a7d4487b64ee824ee13b,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8518844935661816063, guid: df229e13d3b5a7d4487b64ee824ee13b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1515960358}
   m_SourcePrefab: {fileID: 100100000, guid: df229e13d3b5a7d4487b64ee824ee13b, type: 3}
+--- !u!1 &1515960354 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8518844935661816063, guid: df229e13d3b5a7d4487b64ee824ee13b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1450800154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1515960358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515960354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb8bfbb2241788442ab2e2d8ca228d6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 2983880670195699678, guid: 0bade001f0489415cb07d37f150fc005, type: 3}
+  wall: {fileID: 4108274094744336434, guid: 4af201d37ccc84a00a1fd3d1b9bdf265, type: 3}
+  Wall1Position: {x: -3.5, y: 33.5}
+  Wall2Position: {x: -3.5, y: 53.5}
+  BossStartPosition: {x: 0, y: 137}
 --- !u!1001 &1550609881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17296,17 +17353,17 @@ PrefabInstance:
     - target: {fileID: 1007222563776942056, guid: cddc0eae8679c4344b7e477729e7843b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.3
+      value: -6
       objectReference: {fileID: 0}
     - target: {fileID: 1007222563776942056, guid: cddc0eae8679c4344b7e477729e7843b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 80.1
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 1007222563776942056, guid: cddc0eae8679c4344b7e477729e7843b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.3938146
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1007222563776942056, guid: cddc0eae8679c4344b7e477729e7843b,
         type: 3}

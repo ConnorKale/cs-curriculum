@@ -6,7 +6,7 @@ public class TurretProjectileMoving : MonoBehaviour
     public Vector3 target;
     private float timer;
     private GameObject player;
-    
+    private float distance;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +19,7 @@ public class TurretProjectileMoving : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        
+        distance = 6.28f * Time.deltaTime;
         if (timer < 0)
         {
             Destroy(gameObject);
@@ -27,7 +27,7 @@ public class TurretProjectileMoving : MonoBehaviour
 
         if (target != null)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, 0.01f);
+            transform.position = Vector3.MoveTowards(transform.position, target, distance);
         }
 
         if (transform.position == target)

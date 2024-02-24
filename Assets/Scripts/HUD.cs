@@ -7,16 +7,21 @@ public class HUD : MonoBehaviour
     public static HUD hud;
     public int coins;
     public int maxCoins;
+    public int lastSavedCoins;
     public int weapon;
+    public int lastSavedWeapon;
     public int health;
     public int maxHealth;
+    public int lastSavedHealth;
 
     public bool door;
+    public bool lastSavedDoor;
     public bool cp1;
+    public bool lastSavedcp1;
     public bool aftercp1;
+    public bool lastSavedAftercp1;
     public bool cp2;
-    public bool aftercp2;
-    public bool boss;
+    public bool lastSavedcp2;
     
     public CollectCoins CollectCoins;
     public HealthManager HealthManager;
@@ -56,7 +61,6 @@ public class HUD : MonoBehaviour
         cp1 = false;
         aftercp1 = false;
         cp2 = false;
-        aftercp2 = false;
     }
 
     // Update is called once per frame
@@ -65,5 +69,30 @@ public class HUD : MonoBehaviour
 
 //        Debug.Log("weapon = "+weapon);
 //        Debug.Log("Text should say " +weaponText.text);
+    }
+
+    public void Save()
+    {
+        lastSavedCoins = coins;
+        lastSavedHealth = health;
+        lastSavedWeapon = weapon;
+
+        lastSavedDoor = door;
+        lastSavedcp1 = cp1;
+        lastSavedAftercp1 = aftercp1;
+        lastSavedcp2 = cp2;
+    }
+
+    public void Restore()
+    {
+        coins = lastSavedCoins;
+        health = lastSavedHealth;
+        weapon = lastSavedWeapon;
+
+        door = lastSavedDoor;
+        cp1 = lastSavedcp1;
+        aftercp1 = lastSavedAftercp1;
+        cp2 = lastSavedcp2;
+
     }
 }

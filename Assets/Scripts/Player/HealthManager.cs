@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class HealthManager : MonoBehaviour
 {
@@ -10,16 +12,24 @@ public class HealthManager : MonoBehaviour
     private bool iframes;   
     private float timer;
     private float originalTimer;
+
+    private int currentScene;
+
     
     // Start is called before the first frame update
     void Start()
     {
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+
+        Debug.Log("Currently on scene #" + currentScene);
         hud = GameObject.FindObjectOfType<HUD>();
 
         originalTimer = 1.5f;
         
         timer = originalTimer;
         iframes = false;
+
+        hud.Save();
     }
 
     // Update is called once per frame
@@ -97,6 +107,12 @@ public class HealthManager : MonoBehaviour
             {
                 iframes = true;
                 hud.health += amount;
+            }
+
+            if (hud.health < 1)
+            {
+                hud.Restore();
+                SceneManager.LoadScene(currentScene);
             }
         }
 
