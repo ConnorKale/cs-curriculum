@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4668079526467658351}
   - component: {fileID: 2399072710900510365}
   - component: {fileID: 1996527365673187554}
-  - component: {fileID: 6549364271614615059}
+  - component: {fileID: -5391451370753219629}
   m_Layer: 0
   m_Name: PlatformerMobileEnemy
   m_TagString: Enemy
@@ -97,7 +97,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -109,7 +109,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &6549364271614615059
+--- !u!114 &-5391451370753219629
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -118,7 +118,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3736838050167469039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96b225f8e1e9e4644baef1e9965981b4, type: 3}
+  m_Script: {fileID: 11500000, guid: 5df4b9a2eb7c901459aca3f57537757a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
@@ -243,7 +243,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1362581888484945325}
   - component: {fileID: 1574064578472653034}
-  - component: {fileID: 2950884499725192449}
+  - component: {fileID: 6795505134293691923}
   m_Layer: 0
   m_Name: OuterVisionCollider
   m_TagString: MobileEnemyOuterVision
@@ -301,7 +301,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 5.4
---- !u!114 &2950884499725192449
+--- !u!114 &6795505134293691923
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6649814035407383787}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8de69769e8b16441a8bf268d48c6dc9, type: 3}
+  m_Script: {fileID: 11500000, guid: 0acce476807d6d94694aa12029474918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9033622061347615989
@@ -323,7 +323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 49854701042699013}
   - component: {fileID: 1093518249268205697}
-  - component: {fileID: 1974956411026966464}
+  - component: {fileID: 1252762842331304585}
   m_Layer: 0
   m_Name: InnerVisionColider
   m_TagString: MobileEnemyInnerVision
@@ -381,7 +381,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 2.7
---- !u!114 &1974956411026966464
+--- !u!114 &1252762842331304585
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -390,6 +390,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 9033622061347615989}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e410d9e606e1524aae0cad8268bb663, type: 3}
+  m_Script: {fileID: 11500000, guid: eb700da3f40e77545b732a283ea00697, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
